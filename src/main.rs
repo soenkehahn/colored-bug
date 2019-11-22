@@ -2,6 +2,6 @@ use colored::*;
 use pager::Pager;
 
 fn main() {
-    Pager::with_pager("less -RFX").setup();
+    Pager::new().setup();
     println!("{}", "foo".red());
 }
